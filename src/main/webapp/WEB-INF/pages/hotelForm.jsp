@@ -24,10 +24,11 @@
 				<td><mvc:label path="cityName">City Name</mvc:label></td>
 				<td><mvc:input path="cityName" /></td>
 			</tr>
-			<tr>
+				<tr>
 				<td><mvc:label path="roomType">Room Type</mvc:label></td>
-				<td><mvc:select path="roomType" items="${roomTypes}" /></td>
+				<td><mvc:radiobuttons path="roomType" /></td>
 			</tr>
+	
 
   
 			<tr>

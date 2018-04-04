@@ -7,26 +7,30 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring MVC From Handling</title>
+<title>Spring MVC From Handling - NEW</title>
 </head>
 <body> <h2>Hotel Registration Result</h2>
     <table>
     
+     <tr>
+            <td>Hotel name</td>
+            <td>${u.hotelName}</td>
+        </tr>
         <tr>
             <td>City name</td>
-            <td>${h.cityName}</td>
+            <td>${u.cityName}</td>
         </tr>
         <tr>
             <td>Room Type</td>
-            <td>${h.roomType}</td>
+            <td>${u.roomType}</td>
         </tr>
         <tr>
             <td>Number of Adults</td>
-            <td>${h.numberOfAdults}</td>
+            <td>${u.numberOfAdults}</td>
         </tr>
         <tr>
             <td>Number Of Children</td>
-            <td>${h.numberOfChildren}</td>
+            <td>${u.numberOfChildren}</td>
         </tr>
      
         </table>
