@@ -20,4 +20,18 @@ public class HotelController {
 		return modelAndView;
 
 	}
+	
+	@RequestMapping(value = "/result")
+	public ModelAndView processHotel(Hotel hotel) {
+		
+		System.out.println("In ProcessHotel");
+		ModelAndView modelAndView = new ModelAndView();
+		System.out.println("value in getName: " + hotel.getHotelName());
+	//	dao.insertHotel(hotel);
+		modelAndView.setViewName("hotelResult");
+		modelAndView.addObject("h", hotel);
+		return modelAndView;
+	}
+	
+	
 }
