@@ -1,19 +1,39 @@
 package edu.dmacc.spring.hotelregistration;
 
-public class Hotel {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-	private HotelName hotelName;
+@Entity
+@Table(name="hotels")
+public class Hotel {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+
+
+	private int id;
+	private String hotelName;
 	private String cityName;
-	private RoomType roomType;
+    private String roomType;
+//	private RoomType roomType;
 	private int numberOfAdults;
 	private int numberOfChildren;
 	private double cost;
 	
 	
-	public HotelName getHotelName() {
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getHotelName() {
 		return hotelName;
 	}
-	public void setHotelName(HotelName hotelName) {
+	public void setHotelName(String hotelName) {
 		this.hotelName = hotelName;
 	}
 	public String getCityName() {
@@ -22,10 +42,11 @@ public class Hotel {
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
-	public RoomType getRoomType() {
+	
+	public String getRoomType() {
 		return roomType;
 	}
-	public void setRoomType(RoomType roomType) {
+	public void setRoomType(String roomType) {
 		this.roomType = roomType;
 	}
 	public int getNumberOfAdults() {
@@ -44,7 +65,7 @@ public class Hotel {
 		return cost;
 	}
 	public void setCost(double cost) {
-		this.cost = 100.00;	
+		this.cost = cost;	
 		}
 	
 	

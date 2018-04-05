@@ -16,7 +16,7 @@
 	
 			<tr>
 				<td><mvc:label path="hotelName">Hotel Name</mvc:label></td>
-				<td><mvc:radiobuttons path="hotelName" /></td>
+				<td><mvc:input path="hotelName" /></td>
 			</tr>
 	
     
@@ -26,7 +26,8 @@
 			</tr>
 				<tr>
 				<td><mvc:label path="roomType">Room Type</mvc:label></td>
-				<td><mvc:radiobuttons path="roomType" /></td>
+			 	<td><mvc:input path="roomType" /></td> 
+		<!-- 	 <td><mvc:select path="roomType" items="${roomTypes}" /></td> -->	
 			</tr>
 	
 
@@ -39,6 +40,10 @@
 			<tr>
 				<td><mvc:label path="numberOfChildren">Number of Children</mvc:label></td>
 				<td><mvc:input path="numberOfChildren" /></td>
+			</tr>
+	<tr>
+				<td><mvc:label path="cost">Cost</mvc:label></td>
+				<td><mvc:input path="cost" /></td>
 			</tr>
 
 

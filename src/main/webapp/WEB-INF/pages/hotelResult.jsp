@@ -33,6 +33,10 @@
             <td>${u.numberOfChildren}</td>
         </tr>
      
+     <tr>
+            <td>Cost</td>
+            <td>${u.cost}</td>
+        </tr>
         </table>
 <a href = "viewAll.mvc">View All Hotel Registrations</a>
 </body>
